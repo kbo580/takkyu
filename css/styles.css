@@ -85,7 +85,6 @@ body {
   margin: 0 auto;
   max-width: 1030px;
   width: 100%;
-  background-color: rgba(241, 92, 168, 0.2);
   padding: 0 15px;
 }
 
@@ -485,14 +484,75 @@ body {
     padding-top: 100px;
     padding-bottom: 126px;
   }
+  /* 赤タイトル */
+  .price-sub-heading {
+    margin-top: 70px;
+  }
   .price-table-pc-image {
     width: 100%;
     margin-top: 64px;
   }
 }
 /* -------------------------------------------- */
-/*  */
+/* area */
 /* -------------------------------------------- */
+.area-wrap {
+  padding-top: 28px;
+  padding-bottom: 42px;
+}
+
+.area-image-cont {
+  max-width: 84vw;
+  margin: -1.3333333333vw auto 0;
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+}
+
+.area-image-01 {
+  width: 100%;
+  margin-top: 34px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 18px;
+  padding-right: 18px;
+}
+
+.area-image-02 {
+  margin-right: 30px;
+  width: 114px;
+  width: 36.1904761905vw;
+}
+
+.area-image-03 {
+  width: 170px;
+  width: 53.9682539683vw;
+}
+
+@media (min-width: 768px) {
+  .area-wrap {
+    padding-top: 110px;
+    padding-bottom: 94px;
+  }
+  .area-image-cont {
+    max-width: 1030px;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin: -3.6458333333vw auto 0;
+  }
+  .area-image-01 {
+    max-width: 1000px;
+    margin-top: 150px;
+  }
+  .area-image-02 {
+    margin-right: auto;
+    margin-left: 70px;
+    width: 228px;
+  }
+  .area-image-03 {
+    width: 340px;
+  }
+}
 /* -------------------------------------------- */
 /*  */
 /* -------------------------------------------- */
