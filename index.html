@@ -247,7 +247,7 @@
     <!-- /instructor -->
 
     <section class="faq">
-      <div class="faq-wrap inner">
+      <div class="faq-wrap">
         <h2 class="sec-heading">q&a<span class="sec-heading--jp">よくある質問</span></h2>
         <h3 class="faq-list__title --first">入金とお支払いについて</h3>
         
@@ -366,19 +366,42 @@
         <h2 class="sec-heading">mail<span class="sec-heading--jp">お問い合わせ</span></h2>
 
         <form action="">
-          必須
-          お名前
-          メール
-          電話番号
-          お問い合わせ内容
-          個人譲歩後方針に同意する
-          確認画面へ
+          <label class="label" for="name"><span class="badge must">必須</span>お名前</label>
+          <input type="text" id="name">
+          
+          <label class="label" for="mail"><span class="badge must">必須</span>メール</label>
+          <input type="text" id="mail">
+
+          <label class="label" for="tell"><span class="badge must">必須</span>電話番号</label>
+          <input type="text" id="tell">
+
+          <label class="label" for="textarea"><span class="badge must">必須</span>お問い合わせ内容</label>
+          <textarea name="" id="textarea"></textarea>
+
+          <div class="privacy">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur, quis quod hic repudiandae perferendis quisquam officiis impedit quidem vitae quia dolor numquam saepe sunt, nesciunt laborum nemo, beatae laudantium. Molestias.Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur, quis quod hic repudiandae perferendis quisquam officiis impedit quidem vitae quia dolor numquam saepe sunt, nesciunt laborum nemo, beatae laudantium. Molestias.
+          </div>
+          <!-- privacy -->
+
+          <div class="accept">
+          □個人情報後方針に同意する
+          </div>
+          <!-- accept -->
+
+          <input type="submit" value="確認画面へ" class="btn --submit">
+          
+          
+          
+          
+          
+          
+          
 
 
         </form>
         
-
       </div>
+      <!-- /mail-wrap -->
     </section>
     <!-- /mail -->
 
