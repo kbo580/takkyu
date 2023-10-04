@@ -8,6 +8,13 @@ $(function(){
   });
 
 
+  $('.faq-list__a').hide();
+  $('.faq-list__q').on('click', function(){
+    $(this).next('.faq-list__a').slideToggle();
+    $(this).toggleClass('active');
+  });
+
+
 
 
 
