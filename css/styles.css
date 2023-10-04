@@ -322,7 +322,7 @@ body {
   width: 100%;
   height: 100vh;
   transition: left 0.4s;
-  z-index: 1;
+  z-index: 10;
 }
 
 .sp-nav-menu.active {
@@ -429,6 +429,72 @@ body {
 /* -------------------------------------------- */
 /* mv */
 /* -------------------------------------------- */
+.swiper {
+  height: 225px;
+}
+
+.swiper-slide {
+  width: 100%;
+}
+
+.swiper-slide img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+
+.swiper-parts {
+  position: relative;
+  margin-top: 20px;
+}
+
+/* 前へ次への矢印カスタマイズ */
+.swiper-button-prev::after,
+.swiper-button-next::after {
+  bottom: 0;
+  content: "";
+  margin: auto;
+  position: absolute;
+  top: 0;
+  width: 12px;
+  height: 12px;
+  background-color: #b5b4b4;
+}
+
+/* 前への矢印カスタマイズ */
+.swiper-button-prev::after {
+  clip-path: polygon(0 50%, 100% 0, 100% 100%);
+}
+
+/* 次への矢印カスタマイズ */
+.swiper-button-next::after {
+  clip-path: polygon(0 0, 100% 50%, 0 100%);
+}
+
+/* ページネーション */
+/* リセット用 */
+.swiper-horizontal > .swiper-pagination-bullets, .swiper-pagination-bullets.swiper-pagination-horizontal, .swiper-pagination-custom, .swiper-pagination-fraction {
+  bottom: 0px;
+}
+
+.swiper-pagination {
+  position: relative;
+}
+
+.swiper-pagination-bullet {
+  background-color: #b5b4b4;
+  width: 12px;
+  height: 12px;
+}
+
+@media (min-width: 768px) {
+  .swiper {
+    height: 600px;
+  }
+  .swiper-pagination-bullet {
+    background-color: #b5b4b4;
+  }
+}
 /* -------------------------------------------- */
 /* campaign */
 /* -------------------------------------------- */
@@ -710,7 +776,7 @@ body {
 .faq-wrap {
   padding-top: 50px;
   padding-bottom: 20px;
-  max-width: 820px;
+  max-width: 850px;
   width: 100%;
   margin-left: auto;
   margin-right: auto;
@@ -940,7 +1006,11 @@ textarea {
 
 .map {
   height: 370px;
-  background-color: #fff;
+}
+.map iframe {
+  width: 100%;
+  height: 100%;
+  border: none;
 }
 
 @media (min-width: 768px) {
